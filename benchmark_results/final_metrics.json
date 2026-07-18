@@ -1,0 +1,16 @@
+{
+  "needle_accuracy": 1.0,
+  "avg_context_efficiency": 0.004506304509875352,
+  "storage_reduction": 0.9084832280019446,
+  "forgetting_accuracy": 0.7894736842105263,
+  "recall_at_5": 0.9,
+  "precision_at_5": 0.18,
+  "mrr": 0.825,
+  "avg_latency_s": 0.028437423706054687,
+  "judge_relevance_avg": 4.6,
+  "alignment_score": 0.75,
+  "complexity_delta": -0.1333333333333333,
+  "self_correction_rate": 0.51875,
+  "judge_style_avg": 5.0,
+  "suite_wall_s": 2897.216918706894
+}

@@ -1,0 +1,13 @@
+{
+  "chunk_chars": 8000,
+  "scratchpad_budget_tokens": 600,
+  "cluster_sim_threshold": 0.72,
+  "contradiction_sim_threshold": 0.8,
+  "top_k_dense": 20,
+  "top_k_bm25": 10,
+  "graph_hops": 1,
+  "rrf_k": 60,
+  "rerank": false,
+  "rerank_pool": 12,
+  "n_preference_exemplars": 3
+}

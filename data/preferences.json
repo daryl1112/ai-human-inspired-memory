@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pref-1",
+    "situation": "Reviewing a function with deeply nested if/else validation logic.",
+    "chosen": "Use guard clauses / early returns; validate and bail at the top, keep the happy path flat.",
+    "rejected": "Keep nested if/else pyramids and a single return at the bottom.",
+    "principle": "Flat is better than nested; early returns."
+  },
+  {
+    "id": "pref-2",
+    "situation": "Code builds file paths and reads files.",
+    "chosen": "Use pathlib.Path exclusively for paths and file IO.",
+    "rejected": "Use os.path.join and open() with string concatenation.",
+    "principle": "pathlib over os.path, always."
+  },
+  {
+    "id": "pref-3",
+    "situation": "Debug output and operational visibility in services.",
+    "chosen": "Use the logging module with structured, leveled messages.",
+    "rejected": "Sprinkle print() statements for debugging.",
+    "principle": "logging, never print, in service code."
+  },
+  {
+    "id": "pref-4",
+    "situation": "Public functions and their signatures.",
+    "chosen": "Full type hints on parameters and return types.",
+    "rejected": "Untyped signatures.",
+    "principle": "Type hints on public surfaces."
+  },
+  {
+    "id": "pref-5",
+    "situation": "Distributed state, caching, replication design discussions.",
+    "chosen": "State the CAP trade-off explicitly; never silently serve stale writes as authoritative.",
+    "rejected": "Assume the network is reliable.",
+    "principle": "Explicit CAP stance; no silent stale-authoritative reads."
+  },
+  {
+    "id": "pref-6",
+    "situation": "Iterating and transforming lists of records.",
+    "chosen": "Comprehensions/generators for simple transforms.",
+    "rejected": "Index-based loops appending to preallocated lists.",
+    "principle": "Comprehensions for simple transforms."
+  }
+]
