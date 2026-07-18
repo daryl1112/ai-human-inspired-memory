@@ -1,7 +1,6 @@
 services:
   ollama:
     image: ollama/ollama:rocm          # ROCm build for the Radeon 8060S (gfx1151)
-    container_name: ollama
     restart: unless-stopped
     ports:
       - "11435:11434"
@@ -22,7 +21,6 @@ services:
 
   qdrant:
     image: qdrant/qdrant:latest
-    container_name: qdrant
     restart: unless-stopped
     ports:
       - "6333:6333"
@@ -31,7 +29,6 @@ services:
 
   memory-service:
     build: .
-    container_name: memory-service
     restart: unless-stopped
     depends_on:
       - ollama
